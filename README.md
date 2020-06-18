@@ -4,7 +4,7 @@ This repo has a script I'm using to setup a Raspberry pi stream using the v2 cam
 ## Directions
 Put `streamit` in /usr/local/bin, and then make it executable with `chmod +x /usr/local/bin/streamit`
 
-Next, setup a cron job that will run `streamit` once per minute. This is required because sometimes the twitch server will error out and drop your ffmpeg clinet. Note: your subscribers will be spammed with a live stream started notification each time your twitch webcam crashes and restarts.
+Next, setup a cron job that will run `streamit` once per minute. This is required because sometimes the twitch server will error out and drop your ffmpeg clinet. Note: your subscribers will be spammed with a live stream started notification each time your twitch webcam crashes and restarts, unless they disable this notification.
 
 Run
 `crontab -e`
